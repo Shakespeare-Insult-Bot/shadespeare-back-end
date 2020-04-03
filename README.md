@@ -58,25 +58,29 @@
 ** Breakdown
   - vertical slices
 
-  - markov seed data
-    - monty python insults
-    - shakespeare insults
+  [] markov seed data
+    [] monty python insults
+    [] shakespeare insults
 
-  - make markov functions
-    - get insults on compass
+  [] make markov functions
+    [] get insults on compass
 
-  - user model
-    - authorization?
-    - routes
+  [] user model
+    [] authorization?
+    [] routes
 
-  - Tweet model
-    - connect to twitter
-    - routes, Cron
+  [] Tweet model
+    [] connect to twitter
+    [] routes, Cron
 
 ** Demo chunks
 
 ** Play
   - play with markov
+  - data clean up
+    -remove semi-colins and colins
+    -remove weird appostrophes, replace with normal appostrophes or with vowels
+    -add periods to shakespeare endings
   
 
 ** Conflict Resolution
