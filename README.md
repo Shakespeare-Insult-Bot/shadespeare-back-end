@@ -57,7 +57,7 @@
 
 ** Breakdown
   - vertical slices
-  
+
   - markov seed data
     - monty python insults
     - shakespeare insults
@@ -72,7 +72,6 @@
   - Tweet model
     - connect to twitter
     - routes, Cron
-
 
 ** Demo chunks
 
