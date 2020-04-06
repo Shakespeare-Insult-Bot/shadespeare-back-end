@@ -10,15 +10,12 @@ const { text: muchAdoText } = require('./lib/data/much-ado-data');
 const { text: extraShakeText } = require('./lib/data/extra-shakespeare-insults');
 const { text: shakeText } = require('./lib/data/shakespeare-insults');
 const { text: twelfthText } = require('./lib/data/twelfth-night');
-<<<<<<< HEAD
-=======
 const { text: favorites } = require('./lib/data/favorites');
 
 const { text: scottsFavs } = require('./lib/data/scottsFavs');
 
 const { text: fiFavorites } = require('./lib/data/fi-favorites');
 
->>>>>>> a769df8f85347d33aba18f320482623905305074
 
 const { text: favorites } = require('./lib/data/ourFavorites');
 const { text: scottsFavs } = require('./lib/data/scottsFavorites');
