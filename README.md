@@ -62,14 +62,14 @@
     [] monty python insults
     [] shakespeare insults
 
-  [] make markov functions
-    [] get insults on compass
+  [x] make markov functions
+    [x] get insults on compass
 
   [] user model
     [] authorization?
     [] routes
 
-  [] Tweet model
+  [x] Tweet model
     [] connect to twitter
     [] routes, Cron
 
