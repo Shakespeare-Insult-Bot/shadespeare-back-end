@@ -10,13 +10,6 @@ const { text: muchAdoText } = require('./lib/data/much-ado-data');
 const { text: extraShakeText } = require('./lib/data/extra-shakespeare-insults');
 const { text: shakeText } = require('./lib/data/shakespeare-insults');
 const { text: twelfthText } = require('./lib/data/twelfth-night');
-const { text: favorites } = require('./lib/data/favorites');
-
-const { text: scottsFavs } = require('./lib/data/scottsFavs');
-
-const { text: fiFavorites } = require('./lib/data/fi-favorites');
-
-
 const { text: favorites } = require('./lib/data/ourFavorites');
 const { text: scottsFavs } = require('./lib/data/scottsFavorites');
 const { text: fiFavs } = require('./lib/data/fionasFavorites');
@@ -24,6 +17,7 @@ const { text: codyFavs } = require('./lib/data/codysFavorites');
 const { text: jamesFavs } = require('./lib/data/jamesFavorites');
 
 function makeTwit() {
+  // ***the old markov***
   // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + scottsFavs + favorites + fiFavorites + codyFavs + jamesFavs); //all jokes...pretty good
   // const startWords = ['I', 'The', 'Thou', 'Thy', 'Thine', 'You', 'Thee', 'My', 'Peace', 'A', 'Listen', 'Here'];
   // const ending = ['.', '!'];
