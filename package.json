@@ -26,6 +26,7 @@
     "chance": "^1.1.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "markov-chains-text": "^1.0.0",
     "markovchain": "^1.0.2",
     "mongoose": "^5.9.7",
     "twit": "^2.2.11"
