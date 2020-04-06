@@ -32,11 +32,19 @@ function makeTwit() {
   ///////////
   const markovchain = new Markov(montyText + translatedText + shakeText + extraShakeText + scottsFavs + favorites + fiFavs + codyFavs + jamesFavs + muchAdoText);
   let quote = markovchain.makeSentence({ tries: 10 });
-  while(quote.length > 260 || quote.length < 10 || quote.split(' ').length === 1) {
+  while(quote.length > 260 || quote.length < 10) {
     quote = markovchain.makeSentence({ tries: 10 });
   }
-  return quote;
+
+  quote = quote.trim();
+
+  if(quote.startsWith('and ')) {
+    quote = quote.slice(4);
+  }
+  const firstLetter = quote[0].toUpperCase();
+  const capQuote = firstLetter + quote.slice(1);
+  return capQuote;
   //////
 }
 
-console.log('==========tweet: ', makeTwit());
+console.log('==========tweet:', makeTwit());
