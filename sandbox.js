@@ -19,13 +19,18 @@ const { text: fiFavorites } = require('./lib/data/fi-favorites');
 // };
 
 function makeTwit() {
-  // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText); //what we had
+
+  const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText); //what we had
+
 
   // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText); //all jokes...pretty good
 
   // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText); //just jokes and much ado... not great but make more sense
 
-  const quoteChain = new MarkovChain(montyText + montyText + ourText + shakeText + oShakeText + oShakeText + montyText + genericText + favorites); //just jokes and much ado... not great but make more sense
+
+  // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText + montyText + genericText + ourText + shakeText + oShakeText + favorites); //just jokes and much ado... not great but make more sense
+
+
 
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText + shakeText + shakeText + genericText + oShakeText + shakeText + ourText); //all but weighted jokes...kinda bad...too much
 
