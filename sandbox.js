@@ -11,7 +11,11 @@ const { text: ourText } = require('./lib/data/our-insults');
 const { text: shakeText } = require('./lib/data/shakespeare-insults');
 const { text: twelfthText } = require('./lib/data/twelfth-night');
 const { text: favorites } = require('./lib/data/favorites');
+
+const { text: scottsFavs } = require('./lib/data/scottsFavs');
+
 const { text: fiFavorites } = require('./lib/data/fi-favorites');
+
 
 // const endCondition = function(sentence) {
 
@@ -23,7 +27,7 @@ function makeTwit() {
   const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText); //what we had
 
 
-  // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText); //all jokes...pretty good
+  const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + scottsFavs); //all jokes...pretty good
 
   // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText); //just jokes and much ado... not great but make more sense
 
@@ -31,13 +35,13 @@ function makeTwit() {
   // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText + montyText + genericText + ourText + shakeText + oShakeText + favorites); //just jokes and much ado... not great but make more sense
 
 
-
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText + shakeText + shakeText + genericText + oShakeText + shakeText + ourText); //all but weighted jokes...kinda bad...too much
 
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText);
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText);
   // const startWords = ['I', 'The', 'Thou', 'Thy', 'Thine', 'You', 'Thee'];
-  const startWords = muchAdoText.split(' ');
+  const startWords = ['Thou art'];
+  // const startWords = muchAdoText.split(' ');
   const ending = ['.', '!'];
   let quote = '';
   
