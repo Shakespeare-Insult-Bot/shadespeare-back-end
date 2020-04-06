@@ -13,19 +13,35 @@ const { text: twelfthText } = require('./lib/data/twelfth-night');
 const { text: favorites } = require('./lib/data/favorites');
 const { text: scottsFavs } = require('./lib/data/scottsFavs');
 
+const { text: scottsFavs } = require('./lib/data/scottsFavs');
+
+const { text: fiFavorites } = require('./lib/data/fi-favorites');
+
+
 // const endCondition = function(sentence) {
 
 //   if(sentence.split(' ').length >= 30) return;
 // };
 
 function makeTwit() {
-  // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText); //what we had
 
+<<<<<<< HEAD
+=======
+  const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText); //what we had
+
+
+>>>>>>> ec06893b2e9f7ae986a2f26210aaf5afbf1ea1b3
   const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + scottsFavs); //all jokes...pretty good
 
   // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText); //just jokes and much ado... not great but make more sense
 
+<<<<<<< HEAD
   // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText + montyText + genericText + ourText + shakeText + oShakeText + favorites); //just jokes and much ado... not great but make more sense
+=======
+
+  // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText + montyText + genericText + ourText + shakeText + oShakeText + favorites); //just jokes and much ado... not great but make more sense
+
+>>>>>>> ec06893b2e9f7ae986a2f26210aaf5afbf1ea1b3
 
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText + shakeText + shakeText + genericText + oShakeText + shakeText + ourText); //all but weighted jokes...kinda bad...too much
 
@@ -47,4 +63,4 @@ function makeTwit() {
   return quote + chance.pickone(ending);
 }
 
-console.log('!!!!!!!!!!tweet: ', makeTwit());
+console.log('==========tweet: ', makeTwit());
