@@ -38,8 +38,8 @@ function makeTwit() {
 
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText);
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText);
-  // const startWords = ['I', 'The', 'Thou', 'Thy', 'Thine', 'You', 'Thee'];
-  const startWords = ['Thou art'];
+  const startWords = ['I', 'The', 'Thou', 'Thy', 'Thine', 'You', 'Thee'];
+  // const startWords = ['Thou art'];
   // const startWords = muchAdoText.split(' ');
   const ending = ['.', '!'];
   let quote = '';
