@@ -32,13 +32,9 @@ function makeTwit() {
 
   // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText); //just jokes and much ado... not great but make more sense
 
-<<<<<<< HEAD
-  const quoteChain = new MarkovChain(montyText + montyText + ourText + shakeText + oShakeText + oShakeText + montyText + genericText + favorites); //just jokes and much ado... not great but make more sense
-=======
 
   // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText + montyText + genericText + ourText + shakeText + oShakeText + favorites); //just jokes and much ado... not great but make more sense
 
->>>>>>> ec06893b2e9f7ae986a2f26210aaf5afbf1ea1b3
 
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText + shakeText + shakeText + genericText + oShakeText + shakeText + ourText); //all but weighted jokes...kinda bad...too much
 
