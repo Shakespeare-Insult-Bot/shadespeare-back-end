@@ -11,6 +11,14 @@ const { text: ourText } = require('./lib/data/our-insults');
 const { text: shakeText } = require('./lib/data/shakespeare-insults');
 const { text: twelfthText } = require('./lib/data/twelfth-night');
 const { text: favorites } = require('./lib/data/favorites');
+<<<<<<< HEAD
+=======
+
+const { text: scottsFavs } = require('./lib/data/scottsFavs');
+
+const { text: fiFavorites } = require('./lib/data/fi-favorites');
+
+>>>>>>> ec06893b2e9f7ae986a2f26210aaf5afbf1ea1b3
 
 // const endCondition = function(sentence) {
 
@@ -28,10 +36,31 @@ function makeTwit() {
 
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText + shakeText + shakeText + genericText + oShakeText + shakeText + ourText); //all but weighted jokes...kinda bad...too much
 
+<<<<<<< HEAD
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText);
   // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText);
   // const startWords = ['I', 'The', 'Thou', 'Thy', 'Thine', 'You', 'Thee'];
   const startWords = muchAdoText.split(' ');
+=======
+  const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText); //what we had
+
+
+  const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + scottsFavs); //all jokes...pretty good
+
+  // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText); //just jokes and much ado... not great but make more sense
+
+
+  // const quoteChain = new MarkovChain(montyText + genericText + ourText + shakeText + oShakeText + muchAdoText + montyText + genericText + ourText + shakeText + oShakeText + favorites); //just jokes and much ado... not great but make more sense
+
+
+  // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText + shakeText + shakeText + genericText + oShakeText + shakeText + ourText); //all but weighted jokes...kinda bad...too much
+
+  // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText);
+  // const quoteChain = new MarkovChain(twelfthText + montyText + montyText + genericText + ourText + shakeText + genericText + midSummerText + muchAdoText + oShakeText);
+  // const startWords = ['I', 'The', 'Thou', 'Thy', 'Thine', 'You', 'Thee'];
+  const startWords = ['Thou art'];
+  // const startWords = muchAdoText.split(' ');
+>>>>>>> ec06893b2e9f7ae986a2f26210aaf5afbf1ea1b3
   const ending = ['.', '!'];
   let quote = '';
   
@@ -45,4 +74,8 @@ function makeTwit() {
   return quote + chance.pickone(ending);
 }
 
+<<<<<<< HEAD
 console.log('!!!!!!!!!!tweet: ', makeTwit());
+=======
+console.log('==========tweet: ', makeTwit());
+>>>>>>> ec06893b2e9f7ae986a2f26210aaf5afbf1ea1b3
