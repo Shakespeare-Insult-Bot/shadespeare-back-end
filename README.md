@@ -36,11 +36,14 @@
     -GET
     -GET /:id
 
+  -Cron
+
 
 ** Data
   -shakespeare insult list
   -monty python
   -our own shake-sults
+
 
 ** MVP
   - bot that posts and responds with tweets with markov generated shake-sults
@@ -65,9 +68,13 @@
   [x] make markov functions
     [x] get insults on compass
 
-  [x] Tweet model
-    [] connect to twitter
-    [] routes, Cron
+  ** Tuesday
+  [] twitter stuff
+  []in cron job function hit twit routes (twit npm) 
+    []twit post route
+    []twit get route for users (@people)
+  []mock EVERYTHING :(
+  []serious research and devolvement of name and pic
 
 ** Demo chunks
   
@@ -79,3 +86,4 @@
   - check in with work and stretch work
   - over communicate
   - merging requires review
+
