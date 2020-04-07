@@ -78,6 +78,35 @@
       [] second model? for addressing followers
   []serious research and devolvement of name and pic
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+** New Tuesday
+
+USER STORY
+im drunk and i want to get insulted with a robot
+
+MVP
+button that says 'dont press' and provides random insult
+  -first insult is hard coded 'you eight bit twit i told you dont press'
+    Layout Front End
+      -about us
+      -landing page with button
+
+STRETCH
+  -voice would be cool
+  -chat bubbles like a chat window
+  -material ui button
+  -
+
+
+
+
+
+
+
+
+
+
 ** Demo chunks
 
 
