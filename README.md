@@ -71,13 +71,15 @@
   ** Tuesday
   [] twitter stuff
   []in cron job function hit twit routes (twit npm) 
+    [] cron job check for being tweeted at?
+      [] explicite that following bot means being tweeted at
     []twit post route
     []twit get route for users (@people)
-  []mock EVERYTHING :(
+      [] second model? for addressing followers
   []serious research and devolvement of name and pic
 
 ** Demo chunks
-  
+
 
 ** Conflict Resolution
   - majority rule

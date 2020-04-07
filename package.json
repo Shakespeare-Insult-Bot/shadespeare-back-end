@@ -30,6 +30,7 @@
     "markov-chains-text": "^1.0.0",
     "markovchain": "^1.0.2",
     "mongoose": "^5.9.7",
+    "superagent": "^5.2.2",
     "twit": "^2.2.11"
   }
 }
