@@ -36,11 +36,14 @@
     -GET
     -GET /:id
 
+  -Cron
+
 
 ** Data
   -shakespeare insult list
   -monty python
   -our own shake-sults
+
 
 ** MVP
   - bot that posts and responds with tweets with markov generated shake-sults
@@ -57,28 +60,54 @@
 
 ** Breakdown
   - vertical slices
+
+  [x] markov seed data
+    [x] monty python insults
+    [x] shakespeare insults
+
+  [x] make markov functions
+    [x] get insults on compass
+
+  ** Tuesday
+  [] twitter stuff
+  []in cron job function hit twit routes (twit npm) 
+    [] cron job check for being tweeted at?
+      [] explicite that following bot means being tweeted at
+    []twit post route
+    []twit get route for users (@people)
+      [] second model? for addressing followers
+  []serious research and devolvement of name and pic
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+** New Tuesday
+
+USER STORY
+im drunk and i want to get insulted with a robot
+
+MVP
+[x] button that says 'dont press' and provides random insult
+  [x] first insult is hard coded 'you eight bit twit i told you dont press'
+    Layout Front End CSS
+      [] about us
+      [] landing page with button, shade photos
+
+STRETCH
+  -voice would be cool
+  -chat bubbles like a chat window
   
-  - markov seed data
-    - monty python insults
-    - shakespeare insults
 
-  - make markov functions
-    - get insults on compass
 
-  - user model
-    - authorization?
-    - routes
 
-  - Tweet model
-    - connect to twitter
-    - routes, Cron
+
+
+
+
+
 
 
 ** Demo chunks
 
-** Play
-  - play with markov
-  
 
 ** Conflict Resolution
   - majority rule
@@ -87,3 +116,4 @@
   - check in with work and stretch work
   - over communicate
   - merging requires review
+
